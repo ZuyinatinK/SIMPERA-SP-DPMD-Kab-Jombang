@@ -57,7 +57,6 @@ class TabelKendaraan extends CI_Controller
 				echo "<script>alert('Data berhasil ditambah')</script>";
 			}
 				echo "<script>window.location='".site_url('tabelKendaraan')."'</script>";
-                  
         }
     }
 

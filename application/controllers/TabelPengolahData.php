@@ -28,7 +28,7 @@ class TabelPengolahData extends CI_Controller
     }
     public function tambah(){
 
-       $this->form_validation->set_rules('no_registrasi','No Registrasi','required|trim');
+        $this->form_validation->set_rules('no_registrasi','No Registrasi','required|trim');
         $this->form_validation->set_rules('kode_barang','Kode Barang','required|trim');
 
         if ($this->form_validation->run() == false) {
@@ -46,11 +46,10 @@ class TabelPengolahData extends CI_Controller
         } else {
             $this->load->model('Elektronik_model');
             $this->Elektronik_model->tambahDataElektronik();
-           if($this->db->affected_rows() > 0){
+            if($this->db->affected_rows() > 0){
 				echo "<script>alert('Data berhasil ditambah')</script>";
 			}
 				echo "<script>window.location='".site_url('tabelPengolahData')."'</script>";
-                  
         }
         
     }
@@ -133,9 +132,6 @@ class TabelPengolahData extends CI_Controller
     }
     
     public function tambahHistory(){
-        // $datetime = DateTime::createFromFormat('j F, Y', $this->input->post('date', true));
-        // return $datetime->format('Y-F-j');
-        // echo $datetime;
         $this->form_validation->set_rules('date','Tanggal','required|trim');
         
         if ($this->form_validation->run() == false) {
@@ -157,7 +153,6 @@ class TabelPengolahData extends CI_Controller
 				echo "<script>alert('Data berhasil ditambah')</script>";
 			}
 				echo "<script>window.location='".site_url('tabelPengolahData')."'</script>";
-                  
         }
         
     }

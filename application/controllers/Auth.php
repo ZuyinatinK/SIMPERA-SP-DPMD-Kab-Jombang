@@ -7,15 +7,18 @@ class Auth extends CI_Controller
     {
         parent::__construct();
         $this->load->library('form_validation');
-
     }
+
     public function index()
     {
         $this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email');
         $this->form_validation->set_rules('password', 'Password', 'trim|required');
 
         if ($this->form_validation->run() == false) {
-            $this->load->view('auth/login');
+            $data['title'] = 'User Login';
+			$this->load->view('templates/auth_header', $data); 
+			$this->load->view('auth/login');
+			$this->load->view('templates/auth_footer');
         }else {
             $this->_login();
         }
@@ -47,7 +50,7 @@ class Auth extends CI_Controller
                     redirect('dashboard/profil');
                 } else {
                     $this->session->set_flashdata('message', 
-                    '<div class="alert alert-danger" role="alert">Email Belum Mendapat Persetujuan!</div>');
+                    '<div class="alert alert-danger" role="alert">Password Salah!</div>');
                     redirect('auth');
                 }
 
@@ -80,8 +83,10 @@ class Auth extends CI_Controller
         
         
         if($this->form_validation->run() == false){
-            $data['title'] = 'Registrasi';
-            $this->load->view('auth/registrasi', $data);
+            $data['title'] = 'User Registration';
+			$this->load->view('templates/auth_header', $data); 
+			$this->load->view('auth/registrasi');
+			$this->load->view('templates/auth_footer');
         }else{
             $data = [
                 'nama' => htmlspecialchars($this->input->post('nama', true)),
@@ -99,14 +104,16 @@ class Auth extends CI_Controller
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="btn-close"></button><strong>Success!</strong> Akun Sudah Didaftarkan</div>');
             redirect('auth/registrasi');
         }
-
     }
+
     public function logout(){
         $this->session->unset_userdata('email');
         $this->session->unset_userdata('role_id');
 
-        $this->session->set_flashdata('message', '<div class="alert alert-success alert-dismissible alert-alt solid fade show">
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="btn-close"></button><strong>Success!</strong> Akun Sudah Didaftarkan</div>');
+        $this->session->set_flashdata('message', 
+        '<div class="alert alert-success alert-dismissible alert-alt solid fade show">
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="btn-close"></button>
+        <strong>Success!</strong>  Akun Berhasil Logout!</div>');
         redirect('auth');
     }
 

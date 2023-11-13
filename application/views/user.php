@@ -48,12 +48,8 @@
                                             class="text-black user-name"
                                             data-name="Alan Green"><?php echo $usr['nama']; ?></a></h6>
                                     <p class="fs-14 mb-3 user-work" data-occupation="UI Designer">
-                                        <?php echo $usr['email']; ?></p>
-                                    <!-- <ul>
-                                        <li><a href="javascript:void(0);"><i class="fas fa-phone-alt"></i></a></li>
-                                        <li><a href="javascript:void(0);"><i class="far fa-comment-alt"></i></a></li>
-                                        <li><a href="javascript:void(0);"><i class="fas fa-video"></i></a></li>
-                                    </ul> -->
+                                        <?php echo $usr['email']; ?>
+                                    </p>
                                 </div>
                             </div>
                         </div>

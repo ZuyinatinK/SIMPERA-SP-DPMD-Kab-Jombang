@@ -17,9 +17,12 @@
                             <div class="card tryal-gradient" style="height: 34rem;">
                                 <div class="card-body tryal row">
                                     <div class="col-xl-7 col-sm-6">
-                                        <h2 style="font-size: 27px; color:black;">Sistem Pengendalian Pemeliharaan Sarana Prasarana</h2>
+                                        <h2 style="font-size: 27px; color:black;">
+                                        Sistem Pengendalian Pemeliharaan Sarana Prasarana</h2>
                                         <br>
-                                        <span style="color:black; font-size: 15px;">Sistem Informasi ini digunakan untuk monitoring pemeliharaan asset dan service asset Dinas Pemberdayaan Masyarakat dan Desa Kabupaten Jombang, guna menunjang kegiatan operasionalnya.</span>
+                                        <span style="color:black; font-size: 15px;">Sistem Informasi ini digunakan untuk monitoring 
+                                        pemeliharaan asset dan service asset Dinas Pemberdayaan Masyarakat dan Desa Kabupaten Jombang, 
+                                        guna menunjang kegiatan operasionalnya.</span>
                                         <!-- <a href="javascript:void(0);" class="btn btn-rounded  fs-18 font-w500">Try Free Now</a> -->
                                     </div>
                                     <div class="col-xl-5 col-sm-6">
@@ -28,7 +31,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>			
+                    </div>
                 </div>
 
                 <!-- row -->
@@ -64,7 +67,6 @@
                                             <div class="card-footer-link mb-4 mb-sm-0">
                                                 <p class="card-text text-dark d-inline">Last updated</p>
                                             </div>
-
                                             <a href="<?= base_url()?>tabelAC" class="btn btn-primary">Go Ahead</a>
                                         </div>
                                     </div>
@@ -81,7 +83,6 @@
                                             <div class="card-footer-link mb-4 mb-sm-0">
                                                 <p class="card-text text-dark d-inline">Last updated</p>
                                             </div>
-
                                             <a href="<?= base_url()?>tabelPengolahData" class="btn btn-primary">Go Ahead</a>
                                         </div>
                                     </div>

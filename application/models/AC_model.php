@@ -17,24 +17,9 @@ class AC_model extends CI_Model
     
     public function getAllHistory(){
         return $this->db->get('tb_history_ac')->result_array();
-            
         }
 
     public function tambahDataAC(){
-        // $config['upload_path']          = './assets_dash/images/profile/';
-        // $config['allowed_types']        = 'gif|jpg|png';
-        // $config['max_size']             = 10000;
-        // $config['max_width']            = 10240;
-        // $config['max_height']           = 10000;
-
-        // $this->load->library('upload', $config);
-
-        // if ( ! $this->upload->do_upload('userfile'))
-        // {
-        //         echo "gagal";
-        // }
-        // else
-        // {
             $no_registrasi = $this->input->post('no_registrasi', true);
             $kode_barang = $this->input->post('kode_barang', true);
             $user = $this->input->post('user', true);
@@ -52,9 +37,9 @@ class AC_model extends CI_Model
                 "tgl_service" =>$tgl_service,
                 "keterangan" => $keterangan
             ];
-
             $this->db->insert('tb_ac', $data);
     }
+
     public function getACByID($id){
         $this->db->from('tb_ac');
         if($id != null) {
@@ -72,7 +57,6 @@ class AC_model extends CI_Model
     }
     
     public function editDataAC($post){
-       
         $params['no_registrasi'] = $post['no_registrasi'];
         $params['kode_barang'] = $post['kode_barang'];
         $params['tgl_service'] = $post['tgl_service'];
@@ -83,20 +67,13 @@ class AC_model extends CI_Model
     }
     
     public function tambahHistoryAC(){
-       
-        // $datetime = DateTime::createFromFormat('j F, Y', $this->input->post('date'));
-        // return $datetime->format('Y-m-d');
-        // echo $datetime;
-        $data = [
-                "id_ac" =>$this->input->post('id_ac', true),
+                
+        $data = ["id_ac" =>$this->input->post('id_ac', true),
                 "service" =>$this->input->post('service', true),
                 "history"=>$this->input->post('date', true), 
+                ];
             
-            ];
-            
-            $this->db->insert('tb_history_ac', $data);  
-           
-        
+        $this->db->insert('tb_history_ac', $data);  
     }
 
     public function hapusHistoryAC($id){
@@ -107,7 +84,6 @@ class AC_model extends CI_Model
     }
     
     public function editHistoryAC($post){
-       
         $params['id_ac'] = $post['id_ac'];
         $params['service'] = $post['service'];
         $params['history'] = $post['history'];

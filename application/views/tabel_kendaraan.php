@@ -138,33 +138,15 @@
                                 foreach ($kendaraan as $knd) : 
                                 $i++;?>
                                 <tr>
-                                    <td>
-                                        <?php echo $i; ?>
-                                    </td>
-                                    <td>
-                                        <?php echo $knd['kode_barang']; ?>
-                                    </td>
-                                    <td>
-                                        <?php echo $knd['no_registrasi']; ?>
-                                    </td>
-                                    <td>
-                                        <?php echo $knd['no_polisi']; ?>
-                                    </td>
-                                    <td>
-                                        <?php echo $knd['user']; ?>
-                                    </td>
-                                    <td>
-                                        <?php echo $knd['jenis_kendaraan']; ?>
-                                    </td>
-                                    <td>
-                                        <?php echo format_indo($knd['tgl_masuk']); ?>
-                                    </td>
-                                    <td>
-                                        <?php echo format_indo($knd['tgl_service']); ?>
-                                    </td>
-                                    <td>
-                                        <?php echo $knd['keterangan']; ?>
-                                    </td>
+                                    <td><?php echo $i; ?></td>
+                                    <td><?php echo $knd['kode_barang']; ?></td>
+                                    <td><?php echo $knd['no_registrasi']; ?></td>
+                                    <td><?php echo $knd['no_polisi']; ?></td>
+                                    <td><?php echo $knd['user']; ?></td>
+                                    <td><?php echo $knd['jenis_kendaraan']; ?></td>
+                                    <td><?php echo format_indo($knd['tgl_masuk']); ?></td>
+                                    <td><?php echo format_indo($knd['tgl_service']); ?></td>
+                                    <td><?php echo $knd['keterangan']; ?></td>
                                     <td>
                                         <div class="d-flex">
                                             <a href="<?= base_url();?>tabelKendaraan/edit/<?= $knd['id'];?>"

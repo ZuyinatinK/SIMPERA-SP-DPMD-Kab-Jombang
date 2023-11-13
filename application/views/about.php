@@ -201,18 +201,21 @@
                                 <div class="default-tab">
                                     <ul class="nav nav-tabs" role="tablist">
                                         <li class="nav-item">
-                                            <a class="nav-link active" data-bs-toggle="tab" href="#profile"><i class="la la-user me-2"></i> Profile</a>
+                                            <a class="nav-link active" data-bs-toggle="tab" href="#profile">
+                                                <i class="la la-user me-2"></i> Profile</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" data-bs-toggle="tab" href="#contact"><i class="la la-phone me-2"></i> Contact</a>
+                                            <a class="nav-link" data-bs-toggle="tab" href="#contact">
+                                                <i class="la la-phone me-2"></i> Contact</a>
                                         </li>
                                     </ul>
                                     <div class="tab-content">
                                         <div class="tab-pane fade show active" id="profile" role="tabpanel">
                                             <div class="pt-4">
                                             <h4 style="font-size: 20px;">Sistem Pengendalian Pemeliharaan Sarana Prasarana</h4>
-                                                <p>Sistem Informasi ini digunakan untuk monitoring pemeliharaan asset dan service asset Dinas Pemberdayaan 
-                                                    Masyarakat dan Desa Kabupaten Jombang, guna menunjang kegiatan operasionalnya.
+                                                <p>Sistem Informasi ini digunakan untuk monitoring pemeliharaan asset dan service 
+                                                    asset Dinas Pemberdayaan Masyarakat dan Desa Kabupaten Jombang, 
+                                                    guna menunjang kegiatan operasionalnya.
                                                 </p>
                                             </div>
                                         </div>

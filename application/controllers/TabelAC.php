@@ -48,14 +48,13 @@ class TabelAC extends CI_Controller
 				echo "<script>alert('Data berhasil ditambah')</script>";
 			}
 				echo "<script>window.location='".site_url('tabelAC')."'</script>";	
-                  
         }
         
     }
     
     public function edit($id)
 	{
-	    $data['user'] = $this->db->get_where('user',['email'=> $this->session->userdata('email')])->row_array();
+        $data['user'] = $this->db->get_where('user',['email'=> $this->session->userdata('email')])->row_array();
 		$this->form_validation->set_rules('no_registrasi','No Registrasi','required|trim');
         $this->form_validation->set_rules('kode_barang','Kode Barang','required|trim');
 
@@ -87,8 +86,8 @@ class TabelAC extends CI_Controller
 				echo "<script>alert('Data berhasil dihapus')</script>";
 			}
 				echo "<script>window.location='".site_url('tabelAC')."'</script>";	
-
     }
+
     public function ubah($id){
         $data['ac'] = $this->AC_model->getACByID($id);
         $data = [
@@ -104,14 +103,10 @@ class TabelAC extends CI_Controller
         ];
         $this->db->insert('tb_AC',$data);
     }
-    public function tambahHistory(){
-        // $datetime = DateTime::createFromFormat('j F, Y', $this->input->post('date', true));
-        // return $datetime->format('Y-F-j');
-        // echo $datetime;
-        $this->form_validation->set_rules('date','Tanggal','required|trim');
-        
-        if ($this->form_validation->run() == false) {
 
+    public function tambahHistory(){
+        $this->form_validation->set_rules('date','Tanggal','required|trim');
+        if ($this->form_validation->run() == false) {
             $this->load->model('AC_model');
             $data['tbac'] = $this->AC_model->getAllAC();
             $data['historyac'] = $this->AC_model->getAllHistory();
@@ -123,7 +118,7 @@ class TabelAC extends CI_Controller
         } else {
             $this->load->model('AC_model');
             $this->AC_model->tambahHistoryAC();
-            	if($this->db->affected_rows() > 0){
+            if($this->db->affected_rows() > 0){
 				echo "<script>alert('Data berhasil ditambah')</script>";
 			}
 				echo "<script>window.location='".site_url('tabelAC')."'</script>";
@@ -132,16 +127,15 @@ class TabelAC extends CI_Controller
     }
     
     public function hapusHistory($id){
-        
         $this->load->model('AC_model');
         $this->AC_model->hapusHistoryAC($id);
         $this->session->set_flashdata('flash', 'Dihapus');
         if($this->db->affected_rows() > 0){
-				echo "<script>alert('Data berhasil dihapus')</script>";
-			}
-				echo "<script>window.location='".site_url('tabelAC')."'</script>";	
-
+			echo "<script>alert('Data berhasil dihapus')</script>";
+		}
+			echo "<script>window.location='".site_url('tabelAC')."'</script>";	
     }
+
     public function ubahHistory($id){
         $data['AC'] = $this->AC_model->getACByID($id);
         $data = [
@@ -160,8 +154,8 @@ class TabelAC extends CI_Controller
     
     public function editHistory($id)
 	{
-	    $data['user'] = $this->db->get_where('user',['email'=> $this->session->userdata('email')])->row_array();
-	    $data['kendaraan'] = $this->AC_model->getAllAC();
+        $data['user'] = $this->db->get_where('user',['email'=> $this->session->userdata('email')])->row_array();
+        $data['kendaraan'] = $this->AC_model->getAllAC();
         $this->form_validation->set_rules('service','Service','required|trim');
 
         if ($this->form_validation->run() == false) {
