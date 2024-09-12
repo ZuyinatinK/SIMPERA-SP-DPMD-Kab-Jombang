@@ -5,6 +5,16 @@
 
 ## Daftar Isi
 
+- [Tentang SIMPERA-SP](#tentang-simpera-sp)
+- [Fitur Utama](#fitur-utama)
+- [Teknologi yang Digunakan](#teknologi-yang-digunakan)
+- [Instalasi](#instalasi)
+- [Penggunaan](#penggunaan)
+- [Diagram Aktivitas](#diagram-aktifitas)
+- [ERD (Entity Relationship Diagram)](#erd-entity-relationship-diagram)
+- [Preview Website](#preview-web)
+- [Kesimpulan](#kesimpulan)
+
 ## Preview 🚀
 
 Halaman Pengunjung
