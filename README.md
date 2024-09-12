@@ -13,7 +13,19 @@ Sistem ini menyediakan dua antarmuka utama:
 1. **Halaman Pengunjung**: Digunakan oleh pegawai DPMD untuk memantau jalannya proses pemeliharaan sarana prasarana.
 2. **Halaman Admin (Dashboard)**: Memberikan akses kepada admin untuk melakukan manajemen data aset, seperti AC, kendaraan, dan perangkat pengolah data.
 
-Berikut adalah flowchart yang menggambarkan alur kerja dari SIMPERA-SP, mulai dari akses pengunjung hingga proses manajemen oleh admin:
+<!-- Berikut adalah flowchart yang menggambarkan alur kerja dari SIMPERA-SP, mulai dari akses pengunjung hingga proses manajemen oleh admin:
 
 <p align="center"><img alt="FlowChart Pengunjung" src="docs/flowchat/FlowChart-2.png" width="500vw"/></p>
-<p align="center"><img alt="FlowChart Admin" src="docs/flowchat/FlowChart-1.png" width="800vw"/></p>
+<p align="center"><img alt="FlowChart Admin" src="docs/flowchat/FlowChart-1.png" width="800vw"/></p> -->
+
+## Fitur Utama
+
+### 1. Halaman Pengunjung
+Pengunjung adalah pegawai kantor Dinas Pemberdayaan Masyarakat dan Desa yang dapat memantau aktivitas pemeliharaan sarana dan prasarana. Fitur-fitur yang tersedia bagi pengunjung antara lain:
+- **Home**: Informasi umum mengenai status pemeliharaan sarana.
+- **Service**: Detail pemeliharaan sarana dan prasarana yang sedang berlangsung.
+- **About**: Penjelasan tentang tujuan dan manfaat dari SIMPERA-SP.
+- **Monitoring**: Laporan dan status pemeliharaan aset.
+- **Contact**: Informasi kontak penting.
+
+Pengunjung tidak perlu login untuk mengakses halaman ini.
