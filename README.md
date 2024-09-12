@@ -12,6 +12,7 @@ Halaman Pengunjung
 ![preview](docs/portfolio-details-si_assets-1.png)
 
 Halaman Dashboard Admin
+
 ![preview-2](docs/portfolio-details-si_assets-3.png)
 
 ## Tentang SIMPERA-SP
@@ -99,4 +100,15 @@ Admin memiliki hak akses lebih tinggi dan bertanggung jawab untuk mengelola data
     http://localhost/simpera-sp/ 
     ```
     di browser Anda untuk mengakses aplikasi.
+
+## Penggunaan
+- Halaman Pengunjung: Aktor pengunjung diakses tanpa login sehingga dapat melihat status pemeliharaan aset.
+Berikut use case pengunjung.
+
+![UseCase-Pengunjung](docs/use-case/UseCase-Pengunjung.png)
+
+- Halaman Admin: Login diperlukan untuk mengakses dashboard admin dan melakukan manajemen aset.
+Berikut use case admin.
+
+![UseCase-Admin](docs/use-case/UseCase-Admin.png)
 
