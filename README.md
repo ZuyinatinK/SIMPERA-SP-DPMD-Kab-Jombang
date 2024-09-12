@@ -38,3 +38,65 @@ Pengunjung adalah pegawai kantor Dinas Pemberdayaan Masyarakat dan Desa yang dap
 - **Contact**: Informasi kontak penting.
 
 Pengunjung tidak perlu login untuk mengakses halaman ini.
+
+### 2. Halaman Admin (Dashboard)
+Admin memiliki hak akses lebih tinggi dan bertanggung jawab untuk mengelola data aset. Fitur-fitur penting untuk admin meliputi:
+- **Manajemen Data AC**: Mengelola informasi dan status pemeliharaan AC.
+- **Manajemen Data Kendaraan**: Mengelola data kendaraan dinas.
+- **Manajemen Data Barang Pengolah Data**: Mengelola perangkat IT di kantor.
+- **Monitoring Status Pemeliharaan**: Admin dapat memantau dan memperbarui status aset yang sedang dalam pemeliharaan.
+
+## Teknologi yang Digunakan
+- **PHP**: Untuk pengembangan backend dan logika aplikasi.
+- **JavaScript & JQuery**: Untuk interaktivitas halaman dan komunikasi dengan server.
+- **HTML5 & CSS3**: Untuk struktur dan tampilan halaman web.
+- **Bootstrap 4**: Untuk layout dan desain responsif.
+- **CodeIgniter 3**: Sebagai framework MVC yang digunakan untuk membangun sistem ini.
+- **MySQL**: Untuk menyimpan data aset dan aktivitas pemeliharaan.
+
+## Instalasi
+
+1. **Clone repositori**:
+   ```bash
+   git clone https://github.com/ZuyinatinK/SIMPERA-SP-DPMD-Kab-Jombang.git
+   ```
+2. Konfigurasi database:
+    - Buat database baru dengan nama `simpera_sp`. 
+    - Import file `simpera_db.sql` yang terletak di folder ``database/``.
+3. Konfigurasi CodeIgniter:
+    - Sesuaikan file `application/config/config.php` dengan URL proyek Anda.
+    ```bash
+    $config['base_url'] = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == "on") ? "https" : "http");
+    $config['base_url'] .= "://" . $_SERVER['HTTP_HOST'];
+    $config['base_url'] .= str_replace(basename($_SERVER['SCRIPT_NAME']), "", $_SERVER['SCRIPT_NAME']);
+    ```
+    - Konfigurasi koneksi database di `application/config/database.php` pada bagian
+    ```bash
+    $db['default'] = [
+    'dsn' => '',
+    'hostname' => 'localhost',
+	'username' => 'root',
+	'password' => '',
+	'database' => 'simpera_db',
+	'dbdriver' => 'mysqli',
+    'dbprefix' => '',
+    'pconnect' => false,
+    'db_debug' => ENVIRONMENT !== 'production',
+    'cache_on' => false,
+    'cachedir' => '',
+    'char_set' => 'utf8',
+    'dbcollat' => 'utf8_general_ci',
+    'swap_pre' => '',
+    'encrypt' => false,
+    'compress' => false,
+    'stricton' => false,
+    'failover' => [],
+    'save_queries' => true,
+    ];
+    ```
+4. Jalankan di browser: Buka 
+    ``` bash
+    http://localhost/simpera-sp/ 
+    ```
+    di browser Anda untuk mengakses aplikasi.
+
