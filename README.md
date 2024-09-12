@@ -16,4 +16,4 @@ Sistem ini menyediakan dua antarmuka utama:
 Berikut adalah flowchart yang menggambarkan alur kerja dari SIMPERA-SP, mulai dari akses pengunjung hingga proses manajemen oleh admin:
 
 <p align="center"><img alt="FlowChart Pengunjung" src="docs/flowchat/FlowChart-2.png" width="500vw"/></p>
-<p align="center"><img alt="FlowChart Admin" src="docs/flowchat/FlowChart-1.png" width="500vw"/></p>
+<p align="center"><img alt="FlowChart Admin" src="docs/flowchat/FlowChart-1.png" width="800vw"/></p>
