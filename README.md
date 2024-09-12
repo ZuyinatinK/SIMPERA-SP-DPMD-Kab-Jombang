@@ -166,6 +166,87 @@ Berikut ERD dalam sistem SIMPERA-SP.
 ERD ini membantu dalam memetakan struktur basis data yang akan digunakan dalam sistem SIMPERA-SP, memastikan setiap komponen data yang penting dicatat dan dapat diakses dengan tepat.
 
 
+## Preview WEB 
+
+- Warning!
+
+![web-1](docs/preview/1-home-warning.png)
+
+- Home (Halaman Utama)
+
+![web-2](docs/preview/2-home-hero.png)
+
+- Service
+
+![web-3](docs/preview/3-home-service.png)
+
+- About
+
+![web-4](docs/preview/4-home-about.png)
+
+- Monitoring Manajemen Kendaraan
+
+![web-5](docs/preview/5-home-monitoring.png)
+
+- Monitoring Manajemen AC
+
+![web-6](docs/preview/6-home-monitoring.png)
+
+- Monitoring Manajemen Pengolah Data
+
+![web-7](docs/preview/7-home-monitoring.png)
+
+- Contact
+
+![web-8](docs/preview/8-home-contact.png)
+
+- Footer
+
+![web-9](docs/preview/9-home-footer.png)
+
+- Login Admin
+
+![web-10](docs/preview/10-login.png)
+
+- Register Admin
+
+![web-11](docs/preview/11-register.png)
+
+- Profile Admin
+
+![web-12](docs/preview/12-admin-profile.png)
+
+- Dashboard Admin
+
+![web-13](docs/preview/13-admin-dashboard.png)
+
+- User Admin
+
+![web-14](docs/preview/14-admin-user.png)
+
+- Dataset AC & History
+
+![web-15](docs/preview/15-admin-dataset-ac.png)
+
+![web-16](docs/preview/16-admin-dataset-ac.png)
+
+- Dataset Kendaraan & History
+
+![web-17](docs/preview/17-admin-dataset-kendaraan.png)
+
+![web-18](docs/preview/18-admin-dataset-kendaraan.png)
+
+- Dataset Pengolah Data & History
+
+![web-19](docs/preview/19-admin-dataset-pengolah.png)
+
+![web-20](docs/preview/20-admin-dataset-pengolah.png)
+
+- About
+
+![web-21](docs/preview/21-admin-about.png)
+
+
 ## Kesimpulan
 
 SIMPERA-SP adalah sistem informasi yang efektif untuk membantu Dinas Pemberdayaan Masyarakat dan Desa Kabupaten Jombang dalam memantau dan mengelola pemeliharaan sarana prasarana secara digital. Program ini memberikan kemudahan bagi pegawai untuk mengakses informasi terkait aset dan bagi admin untuk melakukan manajemen aset dengan lebih efisien. Dengan fitur yang lengkap, program ini dapat meningkatkan transparansi dan efektivitas operasional pemeliharaan sarana di kantor DPMD.
