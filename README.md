@@ -7,8 +7,11 @@
 
 ## Preview 🚀
 
+Halaman Pengunjung
+
 ![preview](docs/portfolio-details-si_assets-1.png)
 
+Halaman Dashboard Admin
 ![preview-2](docs/portfolio-details-si_assets-3.png)
 
 ## Tentang SIMPERA-SP
