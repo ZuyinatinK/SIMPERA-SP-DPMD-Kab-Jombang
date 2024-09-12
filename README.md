@@ -5,6 +5,12 @@
 
 ## Daftar Isi
 
+## Preview 🚀
+
+![preview](docs/portfolio-details-si_assets-1.png)
+
+![preview-2](docs/portfolio-details-si_assets-3.png)
+
 ## Tentang SIMPERA-SP
 
 **SIMPERA-SP** merupakan aplikasi berbasis web yang dibangun menggunakan **PHP**, **JavaScript**, **HTML**, **CSS**, serta **MySQL** sebagai basis data. Sistem ini dikembangkan dengan memanfaatkan **framework CodeIgniter 3** dan **Bootstrap** untuk mendukung tampilan yang responsif dan interaktif. 
