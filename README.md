@@ -102,6 +102,7 @@ Admin memiliki hak akses lebih tinggi dan bertanggung jawab untuk mengelola data
     di browser Anda untuk mengakses aplikasi.
 
 ## Penggunaan
+
 - Halaman Pengunjung: Aktor pengunjung diakses tanpa login sehingga dapat melihat status pemeliharaan aset.
 Berikut use case pengunjung.
 
@@ -111,4 +112,50 @@ Berikut use case pengunjung.
 Berikut use case admin.
 
 ![UseCase-Admin](docs/use-case/UseCase-Admin.png)
+
+
+## Diagram Aktivitas
+
+Perancangan Diagram Aktivitas dalam sistem SIMPERA-SP digunakan untuk memvisualisasikan alur aktivitas yang terjadi dalam sistem, dari awal aktivitas hingga selesai. Diagram aktivitas ini penting untuk memahami alur kerja sistem secara keseluruhan, termasuk interaksi antara aktor dan sistem.
+
+### Aktivitas Admin
+Admin dalam sistem SIMPERA-SP memiliki hak akses penuh untuk mengelola data terkait sarana dan prasarana di kantor Dinas Pemberdayaan Masyarakat dan Desa Kabupaten Jombang. Langkah awal yang dilakukan admin ketika mengakses sistem adalah menuju ke halaman login. Setelah berhasil login, admin akan diarahkan ke halaman dashboard, di mana admin dapat:
+
+- Manajemen data AC: Admin dapat melakukan penambahan, penghapusan, dan pengeditan data terkait AC yang dimiliki oleh kantor.
+- Manajemen kendaraan: Admin dapat mengelola data kendaraan dinas, termasuk pemeliharaan dan status kendaraan.
+- Manajemen barang pengolah data: Admin juga memiliki akses untuk mengelola barang-barang terkait pengolah data, seperti komputer dan peralatan IT lainnya.
+
+Diagram aktivitas berikut menjelaskan aliran kerja yang dilakukan oleh admin saat mengakses dan mengelola sistem:
+
+- Diagram Aktivitas Manajemen AC
+
+![Activity-Diagram-1](docs/activity-diagram/DiagramActivity-manajemenAC.png)
+
+- Diagram Aktivitas Manajemen Kendaraan
+
+![Activity-Diagram-2](docs/activity-diagram/DiagramActivity-manajemenKendaraan.png)
+
+- Diagram Aktivitas Manajemen Barang Pengolah Data
+
+![Activity-Diagram-3](docs/activity-diagram/DiagramActivity-manajemenPengolah%20Data.png)
+
+
+### Aktivitas Pengunjung
+Pengunjung dalam sistem ini adalah aktor yang dapat memantau jalannya proses pemeliharaan tanpa perlu melakukan login. Pengunjung dapat mengakses beberapa fitur, seperti:
+
+- Home: Halaman utama yang memberikan informasi umum tentang sistem dan pemeliharaan yang sedang berlangsung.
+- Service: Informasi tentang layanan pemeliharaan.
+- Monitoring: Pengunjung dapat melihat status terkini pemeliharaan sarana prasarana secara transparan.
+- Contact: Halaman kontak untuk komunikasi lebih lanjut dengan admin.
+- Pengunjung tidak memiliki hak akses untuk mengelola data, namun mereka dapat dengan mudah memantau proses yang sedang berjalan. 
+
+Aktivitas pengunjung dapat dilihat dalam diagram berikut:
+
+![Activity-Diagram-4](docs/activity-diagram/DiagramActivity-Pengunjung.png)
+
+Diagram ini membantu memperjelas alur kegiatan pengunjung dalam sistem, mulai dari akses informasi hingga pemantauan proses.
+
+
+
+
 
