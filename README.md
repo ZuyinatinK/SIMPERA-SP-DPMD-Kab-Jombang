@@ -155,7 +155,17 @@ Aktivitas pengunjung dapat dilihat dalam diagram berikut:
 
 Diagram ini membantu memperjelas alur kegiatan pengunjung dalam sistem, mulai dari akses informasi hingga pemantauan proses.
 
+## ERD (Entity Relationship Diagram) 
+
+Entity Relationship Diagram (ERD) dalam sistem SIMPERA-SP dirancang untuk memvisualisasikan struktur basis data yang digunakan dalam sistem ini. ERD membantu memahami entitas-entitas yang ada dalam sistem serta bagaimana hubungan antar entitas tersebut. Diagram ini mencakup entitas, atribut, relationship, dan kardinalitas dari basis data.
+
+Berikut ERD dalam sistem SIMPERA-SP.
+
+![ERD](docs/erd/ERD.png)
+
+ERD ini membantu dalam memetakan struktur basis data yang akan digunakan dalam sistem SIMPERA-SP, memastikan setiap komponen data yang penting dicatat dan dapat diakses dengan tepat.
 
 
+## Kesimpulan
 
-
+SIMPERA-SP adalah sistem informasi yang efektif untuk membantu Dinas Pemberdayaan Masyarakat dan Desa Kabupaten Jombang dalam memantau dan mengelola pemeliharaan sarana prasarana secara digital. Program ini memberikan kemudahan bagi pegawai untuk mengakses informasi terkait aset dan bagi admin untuk melakukan manajemen aset dengan lebih efisien. Dengan fitur yang lengkap, program ini dapat meningkatkan transparansi dan efektivitas operasional pemeliharaan sarana di kantor DPMD.
